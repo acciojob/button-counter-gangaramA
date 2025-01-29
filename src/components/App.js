@@ -1,13 +1,20 @@
 
-import React from "react";
-import './../styles/App.css';
+import React, { useState } from "react"
 
-const App = () => {
+function App() {
+
+  const[count,setCount]=useState(0);
+
+  const onAdd=()=>{
+    setCount(count+1)
+  }
+
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
+    
+    <reactFragment>
+      <p>Button clicked {count} times</p>
+      <button onClick={onAdd}>Click Me</button>
+    </reactFragment>
+    
   )
 }
-
-export default App
