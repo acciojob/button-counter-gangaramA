@@ -1,7 +1,7 @@
 
 import React, { useState } from "react"
 
-function App() {
+function App=()=> {
 
   const[count,setCount]=useState(0);
 
@@ -11,10 +11,10 @@ function App() {
 
   return (
     
-    <reactFragment>
+    <div>
       <p>Button clicked {count} times</p>
       <button onClick={onAdd}>Click Me</button>
-    </reactFragment>
+    </div>
     
   )
 }
